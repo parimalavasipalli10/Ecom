@@ -1,0 +1,7 @@
+package Ecommerce.ecom;
+
+public class LoginDetails {
+	String user_Email;
+	String user_password;
+
+}

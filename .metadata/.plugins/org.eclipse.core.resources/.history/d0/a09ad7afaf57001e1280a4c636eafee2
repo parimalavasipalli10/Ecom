@@ -1,0 +1,13 @@
+package Ecommerce.ecom.Repository;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import Ecommerce.ecom.Model.users;
+
+@Repository
+public interface usersRepo extends JpaRepository<Users, Long> {
+    // You can add custom query methods here if needed
+	Optional<Users> findByUser_Email(String user_Email);
+}
